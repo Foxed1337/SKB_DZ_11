@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.zenkov.skb_dz_11.services.SomeHeavyBusinessLogic;
 
 @RestController
-@Timed("test")
 public class SomeController {
 
     private SomeHeavyBusinessLogic heavyBusinessLogic;
