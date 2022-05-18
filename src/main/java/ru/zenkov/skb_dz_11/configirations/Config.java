@@ -10,14 +10,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Configuration
 @EnableScheduling
 public class Config {
-
     @Bean
     public CountedAspect countedAspect(MeterRegistry registry) {
         return new CountedAspect(registry);
-    }
-
-    @Bean
-    public TimedAspect timedAspect(MeterRegistry registry) {
-        return new TimedAspect(registry);
     }
 }
